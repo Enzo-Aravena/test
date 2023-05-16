@@ -1,0 +1,49 @@
+inputstype.campoTexto{
+	border: 0;
+	background: white !important;
+}
+
+.formGroup{
+	margin-bottom:0px !important;
+}
+
+
+.OtrosECG{
+	border-radius: 0px  !important;
+}
+
+.Mostrar input[type="radio"]:checked + span:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 4px !important;
+    background-color: #900;
+    border-radius: 50%;
+    display: block;
+}
+
+.textareaResize{
+    resize: none !important;
+}
+
+
+
+.examenFisico input[type="radio"]:checked + span:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 5px !important;
+    background-color: #900;
+    border-radius: 50%;
+    display: block;
+
+}
+
+
+.inputstype {
+    border: 1px solid #ccc !important;
+}

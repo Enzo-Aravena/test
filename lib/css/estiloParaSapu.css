@@ -1,0 +1,83 @@
+/** MODAL*/
+.modal-header {
+    background: #900 !important;
+}
+
+/* BOTONES **/
+.btn-danger {
+    color: #fff;
+    background-color: #900 !important;
+    border-color: #900;
+}
+
+/*boton default*/
+.btn-default:hover, .btn-default.active {
+    background: #900 !important;
+    color: white !important;
+    border-color: #900 !important;
+}
+
+.btn-default, .btn-default.disabled, .btn-default[disabled] {
+    background: #900 !important;
+    border-color: #900 !important;
+    color: white !important;
+}
+
+/** TABLA TH PARA QUE QUEDE CON VERDE */
+.table caption+thead tr:first-child th, .table colgroup+thead tr:first-child th, .table thead:first-child tr:first-child th, .table caption+thead tr:first-child td, .table colgroup+thead tr:first-child td, .table thead:first-child tr:first-child td {
+    border-top: 0;
+    background-color: #900 !important;
+    color: white;
+}
+
+
+.categorizacion{
+    border-style: double;
+    border-color: red !important;
+}
+
+
+/***** RECUADRO QUE CONTIENE LOS DATOS EN LA INFORMACION (I)  *****/
+
+.more{
+	background: #900 !important;
+	border-radius: 14px;
+	color: white;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.recuadro{
+	background-color: #e6e6e6;position: absolute;top: 25px;left: 10px;z-index: 3;width: 23em;border-style: double;
+	-webkit-box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.75);
+}
+
+
+/**** ATENCION PACIENTE ****/
+.mayuscula{text-transform:lowercase;}
+.Margen, .opacity .radio-inline, .opacity .checkbox-inline { 
+    position: static;
+}
+
+.examenFisico input[type="radio"]:checked + span:after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 6px;
+	left: 5px !important;
+	background-color: #900 !important;
+	border-radius: 50%;
+	display: block;
+}
+
+/** CALENDARIO */
+
+.datepicker table tr td.active:hover, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active[disabled], .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active.disabled:hover[disabled] {
+    background-color: #900 !important;
+}

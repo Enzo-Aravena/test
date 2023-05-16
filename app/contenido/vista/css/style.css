@@ -1,0 +1,120 @@
+.tableContent{
+	background: #900;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0px !important;
+    font-weight: bold;
+}
+
+
+/*REGULA EL CENTRO DEL RADIO BUTTON */
+.Mostrar input[type="radio"]:checked + span:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: -15px !important;
+    background-color: #900;
+    border-radius: 50%;
+    display: block;
+}
+
+
+.examenFisico input[type="radio"]:checked + span:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 5px !important;
+    background-color: #900;
+    border-radius: 50%;
+    display: block;
+
+}
+
+
+.textareaResize{
+	resize: none !important;
+}
+
+
+.inputText{
+    border: none;
+    background: white;
+    border-bottom: 1px solid;
+}
+
+.fecha{
+    padding: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    direction: ltr;
+    z-index: 1151 !important;
+}
+
+#resultRegistradas > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultRegistradas > tr:nth-child(even){
+    background-color: #eed !important;
+}*/
+
+/******/
+#resultTriadas > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultTriadas > tr:nth-child(even){
+    background-color: #eed !important;
+}*/
+
+
+/******/
+#resultAtendidas > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultAtendidas > tr:nth-child(even){
+    background-color: #eed !important;
+}*/
+
+/******/
+#resultadosObsYtto > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultadosObsYtto > tr:nth-child(even){
+    background-color: #eed !important;
+}*/
+
+/******/
+#resultAlta > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultAlta > tr:nth-child(even){
+    background-color: #eed !important;
+}*/
+/******/
+#resultDadosDeAlta > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultDadosDeAlta > tr:nth-child(even){
+    background-color: #eed !important;
+}*/
+/******/
+#resultCanceladas > tr:hover{
+    background-color: #ecec55 !important;
+}
+
+/*#resultCanceladas > tr:nth-child(even){
+    background-color: #eed !important;
+}*/

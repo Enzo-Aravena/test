@@ -1,0 +1,34 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/PhenX/php-font-lib
+EncodingScheme FontSpecific
+FontName se7en
+FontSubfamily Regular
+UniqueID FontForge 2.0 : se7en : 5-9-2013
+FullName se7en
+Version Version 1.0
+PostScriptName se7en
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 0
+UnderlinePosition 0
+FontHeightOffset 90
+Ascender 929
+Descender -71
+FontBBox 0 -71 1000 929
+StartCharMetrics 15
+U 57344 ; WX 1000 ; N uniE000 ; G 12
+U 57345 ; WX 1000 ; N uniE001 ; G 14
+U 57346 ; WX 1000 ; N uniE002 ; G 5
+U 57347 ; WX 1000 ; N uniE003 ; G 6
+U 57348 ; WX 1000 ; N uniE004 ; G 7
+U 57349 ; WX 1000 ; N uniE005 ; G 13
+U 57350 ; WX 1000 ; N uniE006 ; G 4
+U 57351 ; WX 1000 ; N uniE007 ; G 9
+U 57352 ; WX 1000 ; N uniE008 ; G 10
+U 57353 ; WX 1000 ; N uniE009 ; G 11
+U 57354 ; WX 1000 ; N uniE00A ; G 8
+U 61440 ; WX 0 ; N uniF000 ; G 3
+EndCharMetrics
+EndFontMetrics
