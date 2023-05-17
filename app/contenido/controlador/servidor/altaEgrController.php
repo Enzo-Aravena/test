@@ -77,6 +77,18 @@
 				}
 			break;
 
+			case 'cargarListaGes':
+				$data = $modelo->OBTENER_LISTA_DIAGNOSTICO_GES($conn);
+				if ($data[0]["data"] == "0") {
+					echo "0";
+				}else{
+					echo json_encode($data);
+				}
+
+				/*$data = '[{"data":"1","CODIGO":"1","NOMBRE":"IRA BAJA < 5 AÑOS"},{"data":"1","CODIGO":"2","NOMBRE":"NEUMONIA > 65 AÑOS"},{"data":"1","CODIGO":"3","NOMBRE":"OTRO"}]';
+				echo $data;*/
+			break;
+
 			case 'ingresarAlta':
 				$conId = $_REQUEST['conId'];
 				$fechaYHoraPantalla = $_REQUEST['fechaYHoraPantalla'];
@@ -120,6 +132,13 @@
 				$perId = $_REQUEST['perId'];
 				$fechaSalida = date('Y-m-d H:i:s');
 
+				$ObtenerListaind1 = $_REQUEST["ObtenerListaind1"];
+				$ObtenerListaind2 = $_REQUEST["ObtenerListaind2"];
+				$ObtenerListaind3 = $_REQUEST["ObtenerListaind3"];
+				$esPacienteGes = $_REQUEST["esPacienteGes"];
+				$diagnosGes = $_REQUEST["diagnosGes"]; 
+
+
 				$sospechaAuge = $_REQUEST["sospechaAuge"];
 				$sospechaSaludAuge = utf8_decode($_REQUEST["sospechaSaludAuge"]);
 				$subproblemaAuge = utf8_decode($_REQUEST["subproblemaAuge"]);
@@ -136,7 +155,17 @@
 				if($ecg === "false"){$ecg = "NULL";}else{$ecg = 1;}
 
 				if ($centroDerivacion === "0") { $centroDerivacion = 'NULL'; }else{$centroDerivacion=$centroDerivacion;}
+				
 
+				//NUEVOS CAMPOS GES E INDICACIONES SELECT BOX = $esPacienteGes
+				if($esPacienteGes === "false"){$esPacienteGes = "NULL";}else{$esPacienteGes = 1;}
+				if($diagnosGes === "0"){$diagnosGes = "NULL";	}else{$diagnosGes = $diagnosGes;}
+				if($ObtenerListaind1 === "0"){$ObtenerListaind1 = "NULL";	}else{$ObtenerListaind1 = $ObtenerListaind1;}
+				if($ObtenerListaind2 === "0"){$ObtenerListaind2 = "NULL";	}else{$ObtenerListaind2 = $ObtenerListaind2;}
+				if($ObtenerListaind3 === "0"){$ObtenerListaind3 = "NULL";	}else{$ObtenerListaind3 = $ObtenerListaind3;}
+				
+				
+				
 				//VALIDACIONES CAMPOS CHECKBOX NUEVOS DE EGRESO
 				if($confirmacioDiagnostica === "false"){$confirmacioDiagnostica = "NULL";}else{$confirmacioDiagnostica= 1;}
 				if($realizarTto === "false"){$realizarTto = "NULL";}else{$realizarTto= 1;}
@@ -214,6 +243,18 @@
 				$modelo->setNombreCampos($nombreCampos);
 				$modelo->setValorCampos($valorCampos);
 				$data = $modelo->SP_INSERTAR_NSP_PACIENTE($conn);
+				$ObtenerListaind1 = $_REQUEST["ObtenerListaind1"];
+				$ObtenerListaind2 = $_REQUEST["ObtenerListaind2"];
+				$ObtenerListaind3 = $_REQUEST["ObtenerListaind3"];
+				$esPacienteGes = $_REQUEST["esPacienteGes"];
+				$diagnosGes = $_REQUEST["diagnosGes"];
+
+				//NUEVOS CAMPOS GES E INDICACIONES SELECT BOX = $esPacienteGes
+				if($esPacienteGes === "false"){$esPacienteGes = "NULL";}else{$esPacienteGes = 1;}
+				if($diagnosGes === "0"){$diagnosGes = "NULL";	}else{$diagnosGes = $diagnosGes;}
+				if($ObtenerListaind1 === "0"){$ObtenerListaind1 = "NULL";	}else{$ObtenerListaind1 = $ObtenerListaind1;}
+				if($ObtenerListaind2 === "0"){$ObtenerListaind2 = "NULL";	}else{$ObtenerListaind2 = $ObtenerListaind2;}
+				if($ObtenerListaind3 === "0"){$ObtenerListaind3 = "NULL";	}else{$ObtenerListaind3 = $ObtenerListaind3;}
 				if ($data[0]["data"] == "0") {
 					echo "0";
 				}else{

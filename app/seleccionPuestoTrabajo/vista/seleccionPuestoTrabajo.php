@@ -14,13 +14,14 @@
 	<link href="../../../lib/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="../../../lib/css/se7en-font.css" media="all" rel="stylesheet" type="text/css" />  
 	<link href="../../../lib/css/style.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="../vista/css/style.css" media="all" rel="stylesheet" type="text/css" />
 	<script src='../../../lib/jquery-3.2.1.min.js'></script>
 	
 	<?php include_once("../../../lib/components.php");?>
 	<script src='../../../lib/jquery/jquery.tablesorter.min.js'></script> 
-	<script src='../../../lib/jquery/jquery.tablesorter.widgets.min.js'></scrpt> 
+	<script src='../../../lib/jquery/jquery.tablesorter.widgets.min.js'></script> 
 	<script src='../../../lib/jquery/jquery.tablesorter.widgets.js'></script>
-	<!--	<script src="../controlador/cliente/seleccionPacienteController.js"></script>-->
+	<script src="../controlador/cliente/seleccionPacienteController.js"></script>
 	<script src="js/navegadorSeleccion.js"></script>
 	<style>
 	.datepicker{z-index:1151 !important;}
@@ -41,29 +42,30 @@
 		    window.onhashchange=function(){window.location.hash="no-back-button";}
 		}
 	</script>
-</head>
-	<body onload="deshabilitaRetroceso()">
+</head >
+	<body onload="deshabilitaRetroceso()" style="background-color: #fafafa;">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="widget-container">
 					<div class="widget-content padded">
 						<div class="form-horizontal">
-							<label style="color: #900;font-size: 21px;">Seleccione Centro de atención</label>
+							<label style="color: #900;font-size: 40px;"></label>
 						</div>					
 						<br>
 
-						<div class="form-horizontal" id="mostrarCentro">
-						</div>
 
-						<!-- <div class="form-horizontal">
+						 <div class="datagrid">
 								<table class="table table-bordered">
-									<thead>
-										<th class="hidden-xs" style="background: #900;color: white;" colspan="2"> Centro Atención </th>
-									</thead>
-									<tbody id="centroAtencionPac">
+
+									<tbody style="width:100%; position:static" id="mostrarCentro">
+									<tr>
+											
+									</tr>
+
 									<tbody>
+									
 								</table>
-						</div> -->
+						</div> 
 
 
 

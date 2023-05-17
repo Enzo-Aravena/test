@@ -37,7 +37,7 @@
                 foreach($data as $clave => $valor)
                 {
                     $fechaIngreso = explode("/", $valor['FECHA_INGRESO']);
-                    $valueGes = $valor['NOTIFICACION_GES'];
+                    $ = $valor['NOTIFICACION_GES'];
         
                     $code .='<div style="border:1px solid black;">';
                         $code .='<div style="margin-left:6;margin-right:6;">';

@@ -314,7 +314,7 @@
 				$ObtenerListaind2 = $_REQUEST["ObtenerListaind2"];
 				$ObtenerListaind3 = $_REQUEST["ObtenerListaind3"];
 				$esPacienteGes = $_REQUEST["esPacienteGes"];
-				$diagnosGes = $_REQUEST["diagnosGes"];
+				$diagnosGes = $_REQUEST["diagnosGes"]; 
 
 
 				//DATOS COMPLETOS PARA EL EGRESO DEL PACIENTE

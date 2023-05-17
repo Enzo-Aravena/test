@@ -83,7 +83,7 @@ function cargarListaGes() {
         }, // End success
         error: function(error) {
                 console.log("Error en la petición");
-            } // End error
+            } // End error 
     }); //End ajax
 }
 
@@ -355,15 +355,16 @@ function cargarDatosPaciente(conId) {
                     }
 
 
-                    if (resultado[0].DIAGNOSTICO_GES === "0") {
-                        $('select[name=diagnosGes]').val("0");
+                    if (resultado[0].DIAGNOSTICO_GES === "0") { 
+                        $('select[name=diagnosGes]').append(select);
                     } else {
                         $('select[name=diagnosGes]').val(resultado[0].DIAGNOSTICO_GES);
                     }
 
 
                     $("#nFrasco").val(resultado[0].N_FRASCO);
-                    $("#nFrasco").prop('disabled', true);
+                    $("#nFrasco").prop('
+                    d', true);
                     $("#Anamnesis").val(resultado[0].ANAMNESIS);
                     $("#Anamnesis").prop('disabled', true);
                     $("#detCabeza").val(resultado[0].CABEZA_TEXTO);
@@ -583,6 +584,40 @@ function cargarDatosPaciente(conId) {
     }); //End ajax
 }
 
+function guardarValorGES(checkbox) {
+    var valorGES = checkbox.checked ? 1 : 0; // Obtiene el valor del checkbox (1 si está seleccionado, 0 si no)
+    $.ajax({
+        url: '../controlador/servidor/altaEgrController.php', // Ruta al archivo PHP que procesa y guarda los valores en la base de datos
+        method: 'POST',
+        data: {
+            valorGES: valorGES
+        },
+        success: function(response) {
+            // Lógica adicional después de guardar el valor en la base de datos
+        },
+        error: function(error) {
+            // Manejo de errores
+        }
+    });
+}
+
+function guardarValorDiagnostico(select) {
+    var valorDiagnostico = select.value; // Obtiene el valor seleccionado del select
+    $.ajax({
+        url: '../controlador/servidor/altaEgrController.php', // Ruta al archivo PHP que procesa y guarda los valores en la base de datos
+        method: 'POST',
+        data: {
+            valorDiagnostico: valorDiagnostico
+        },
+        success: function(response) {
+            // Lógica adicional después de guardar el valor en la base de datos
+        },
+        error: function(error) {
+            // Manejo de errores
+        }
+    });
+}
+
 function cargarFechaInicialPantalla() {
     var url = "../controlador/servidor/altaEgrController.php";
     var type = "POST";
@@ -609,7 +644,7 @@ function cargarFechaInicialPantalla() {
 }
 
 
-function ingresarAltaPaciente(conId, fechaYHoraPantalla, cabeza, detCabeza, torax, detTorax, abdomen, detAbdomen, pelvis, detPelvis, extSuperiores, detExtSup, extInferiores, detExtInf, exNeurologico, detExamNeuro, diagnostico, EvolucionObsMed, radiografia, detRadio, ExamenSangre, detExSangre, ecg, detECG, EgresoInd, tipoAlta, centroDerivacion, grupoDiagnostico, CatFinal, horaCatEgreso, fcDos, frDos, tempAxDos, satODos, psDos, pdDos, hgtDos, eEvaDos, eglasgowDos, perId, fechaSalida, sospechaAuge, sospechaSaludAuge, subproblemaAuge, especialidad, confirmacioDiagnostica, realizarTto, Seguimiento, otraConsulta, consultaTextoEspecificar) {
+function ingresarAltaPaciente(conId, fechaYHoraPantalla, cabeza, detCabeza, torax, detTorax, abdomen, detAbdomen, pelvis, detPelvis, extSuperiores, detExtSup, extInferiores, detExtInf, exNeurologico, detExamNeuro, diagnostico, EvolucionObsMed, radiografia, detRadio, ExamenSangre, detExSangre, ecg, detECG, EgresoInd, tipoAlta, centroDerivacion, grupoDiagnostico, CatFinal, horaCatEgreso, fcDos, frDos, tempAxDos, satODos, psDos, pdDos, hgtDos, eEvaDos, eglasgowDos, perId, fechaSalida, sospechaAuge, sospechaSaludAuge, subproblemaAuge, especialidad, confirmacioDiagnostica, realizarTto, Seguimiento, otraConsulta, consultaTextoEspecificar,ObtenerListaind1, ObtenerListaind2, ObtenerListaind3, esPacienteGes, diagnosGes) {
     var url = "../controlador/servidor/altaEgrController.php";
     var type = "POST";
     var conId = conId;
@@ -666,7 +701,12 @@ function ingresarAltaPaciente(conId, fechaYHoraPantalla, cabeza, detCabeza, tora
         realizarTto: realizarTto,
         Seguimiento: Seguimiento,
         otraConsulta: otraConsulta,
-        consultaTextoEspecificar: consultaTextoEspecificar
+        consultaTextoEspecificar: consultaTextoEspecificar,
+        ObtenerListaind1: ObtenerListaind1,
+        ObtenerListaind2: ObtenerListaind2,
+        ObtenerListaind3: ObtenerListaind3,
+        esPacienteGes: esPacienteGes,
+        diagnosGes: diagnosGes
     };
     $.ajax({
         url: url,

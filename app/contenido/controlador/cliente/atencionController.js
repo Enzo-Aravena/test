@@ -639,6 +639,8 @@ function registrarAtencionParaEgreso(conId, horaIngresoPantalla, fechaYHoraPanta
         realizarTto: realizarTto,
         Seguimiento: Seguimiento,
         otraConsulta: otraConsulta,
+        esPacienteGes: esPacienteGes,
+        diagnosGes: diagnosGes,
         consultaTextoEspecificar: consultaTextoEspecificar
 
 

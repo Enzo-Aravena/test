@@ -296,7 +296,7 @@
 			                        <tr>
 			                            <td colspan="3">
 											<label class="radio-inline examenFisico" style="margin-top: -1% !important;">
-												<input disabled name="vieneAcompanado" id="vieneAcompanadoSi" type="radio" value="1"><span> Si </span>
+												< name="vieneAcompanado" id="vieneAcompanadoSi" type="radio" value="1"><span> Si </span>
 											</label>
 											<label class="radio-inline examenFisico" style="margin-top: -1% !important;">
 												<input disabled name="vieneAcompanado" id="vieneAcompanadoNo" type="radio" value="0"><span> No </span>
@@ -329,9 +329,9 @@
 								<table class="table table-bordered" >
 									<tr>
 										<td style="border: none">
-											<label><input type="checkbox" id="Alcoholemia" name="Alcoholemia" disabled ><span> Alcoholemia </span></label>
+											<label><input type="checkbox" id="Alcoholemia" name="Alcoholemia" disabled /><span> Alcoholemia </span></label>
 											<label>&nbsp; &nbsp; Nº Frasco </label>
-											<input id="nFrasco" name="nFrasco" style="width: 7em;" maxlength="18" type="text" disabled >
+											<input id="nFrasco" name="nFrasco" style="width: 7em;" maxlength="18" type="text" disabled />
 										</td>
 										<td style="border: none;width: 37%;">												
 										</td>
@@ -462,12 +462,11 @@
 												<td style="border: none"> &nbsp;</td>
 											</tr>
 											<tr>
-												<td style="border: none">
-													<label><input type="checkbox" id="GES" name="GES" ><span> Notificación GES </span></label><br>
-													<label  for="diagnosGes"> Diagnóstico GES</label>
-													<select class="form-control" style="width: 20em; display: inline-block;" id="diagnosGes" name="diagnosGes">
-													</select>
-												</td>
+											<td style="border: none">
+    											<label><input type="checkbox" id="GES" name="GES" onchange="guardarValorGES(this)" ><span> Notificación GES </span></label><br>
+    											<label for="diagnosGes"> Diagnóstico GES</label>
+    											<select class="form-control" style="width: 20em; display: inline-block;" id="diagnosGes" name="diagnosGes" onchange="guardarValorDiagnostico(this)"></select>
+											</td>
 											</tr>
 											<tr>
 												<td style="border: none">

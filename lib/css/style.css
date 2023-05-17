@@ -57,7 +57,7 @@ strong {
   font-weight: 700; }
 
 a {
-  color: #900; }
+  color: rgb(0, 0, 0); }
   a:hover {
     color: #666666;
     text-decoration: none; }
