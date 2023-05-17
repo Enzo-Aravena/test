@@ -26,7 +26,7 @@
 				}else{
 					$tabla = $tabla.'<table class="table table-bordered">';
 					$tabla = $tabla.'<thead>';
-					$tabla = $tabla.'	<th class="hidden-xs" style="background: #900;color: white;" colspan="2"> Centro Atención </th>';
+					$tabla = $tabla.'	<th class="hidden-xs" style="background: #194569;color: white;" colspan="2"> Centro Atención </th>';
 					$tabla = $tabla.'</thead>';
 					$tabla = $tabla.'<tbody id="centroAtencionPac">';
 					foreach($data as $clave => $valor){

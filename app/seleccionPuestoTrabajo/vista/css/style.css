@@ -4,7 +4,7 @@
 } 
 .datagrid {
     font: normal 12px/150% Georgia, Times New Roman, Times, serif;
-    background: linear-gradient(#ffbba8, #fff4e1); overflow: hidden; 
+    background: linear-gradient(#f2f2bf, #fff4e1); overflow: hidden; 
     -webkit-border-radius: 7px; 
     -moz-border-radius: 7px; 
     border-radius: 7px; 

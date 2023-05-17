@@ -59,7 +59,7 @@ label {
 }
 
 #resultRegistradas > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultRegistradas > tr:nth-child(even){
@@ -68,7 +68,7 @@ label {
 
 /******/
 #resultTriadas > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultTriadas > tr:nth-child(even){
@@ -78,7 +78,7 @@ label {
 
 /******/
 #resultAtendidas > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultAtendidas > tr:nth-child(even){
@@ -87,7 +87,7 @@ label {
 
 /******/
 #resultadosObsYtto > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultadosObsYtto > tr:nth-child(even){
@@ -96,7 +96,7 @@ label {
 
 /******/
 #resultAlta > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultAlta > tr:nth-child(even){
@@ -104,7 +104,7 @@ label {
 }*/
 /******/
 #resultDadosDeAlta > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultDadosDeAlta > tr:nth-child(even){
@@ -112,7 +112,7 @@ label {
 }*/
 /******/
 #resultCanceladas > tr:hover{
-    background-color: #ecec55 !important;
+    background-color: #e4f4fd !important;
 }
 
 /*#resultCanceladas > tr:nth-child(even){
